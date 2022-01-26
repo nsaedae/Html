@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>팜스토리::메인</title>
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '돋움';
+        }
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+        input, textarea {outline: none;}
+        body {}
+
+        #wrapper {
+            width: 980px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        /* 헤더영역 */
+        header {
+            position: relative;
+            width: 100%;
+            height: 142px;
+            background: url('./img/head_top_line.png') no-repeat;
+        }
+
+        header > .logo {
+            position: absolute;
+            left: 50%;
+            top: 16px;
+            margin-left: -95px;
+            display: block;
+            width: 190px;
+            height: 64px;                       
+        }
+        
+        header > p {
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+        
+        header > img {
+            position: absolute;
+            right: 0;
+            top: 56px;
+        }
+
+        header > ul {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+        }
+        header > ul > li {
+            float: left;
+            width: 20%;
+            height: 50px;
+            background: url('./img/head_menu_line.png') no-repeat;            
+        }
+        header > ul > li > a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 0;
+            background-repeat: no-repeat;
+            background-position-y: 6px;
+        }
+
+        header > ul > li:nth-child(1) > a {background-image: url('./img/head_menu1.png');}
+        header > ul > li:nth-child(2) > a {background-image: url('./img/head_menu2.png');}
+        header > ul > li:nth-child(3) > a {background-image: url('./img/head_menu3.png');}
+        header > ul > li:nth-child(4) > a {background-image: url('./img/head_menu4.png');}
+        header > ul > li:nth-child(5) > a {background-image: url('./img/head_menu5.png');}
+        
+        header > ul > li:nth-child(1) > a:hover {background-image: url('./img/head_menu1_ov.png');}
+        header > ul > li:nth-child(2) > a:hover {background-image: url('./img/head_menu2_ov.png');}
+        header > ul > li:nth-child(3) > a:hover {background-image: url('./img/head_menu3_ov.png');}
+        header > ul > li:nth-child(4) > a:hover {background-image: url('./img/head_menu4_ov.png');}
+        header > ul > li:nth-child(5) > a:hover {background-image: url('./img/head_menu5_ov.png');}
+
+        header > ul > li > a > img {
+            position: absolute;
+            left: 120px;
+            top: -20px;
+        }
+
+
+        /* 메인영역 */
+        main {
+            width: 100%;
+            height: auto;
+        }
+
+        main > div {
+            width: 100%;
+            margin-top: 10px;
+        }
+        main > .slider {
+            height: 312px;
+        }
+        main > .quick {
+            height: 74px;
+        }
+        main > .latest {
+            height: 186px;
+        }
+        main > .info {
+            height: 154px;
+        }
+
+        /* 푸터영역 */
+        footer {
+            width: 100%;
+            height: 120px;
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="#" class="logo"><img src="./img/logo.png" alt="로고"/></a>
+            <p>
+                <a href="#">HOME |</a>
+                <a href="#">로그인 |</a>
+                <a href="#">회원가입 |</a>
+                <a href="#">고객센터</a>
+            </p>
+
+            <img src="./img/head_txt_img.png" alt="3만원이상 무료배송 팜카드 10%적립"/>
+
+            <ul>
+                <li><a href="#">팜스토리소개</a></li>
+                <li><a href="#"><img src="./img/head_menu_badge.png" alt="30%"/>장보기</a></li>
+                <li><a href="#">농작물이야기</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
+            
+        </header>
+        <main>
+            <div class="slider"></div>
+            <div class="quick"></div>
+            <div class="latest"></div>
+            <div class="info"></div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
