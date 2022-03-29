@@ -228,3 +228,10 @@ main > section {
     min-height: initial;
     height: 425px;
 }
+
+/* 상품(product) 공통 */
+main > section > nav {}
+main > section > nav > h1 {}
+main > section > nav > p {}
+main > section > nav > p > span {}
+main > section > nav > p > strong {}

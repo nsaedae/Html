@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <title>케이마켓::상품상세</title>
     <link rel="stylesheet" href="../css/style.css"/>
+    <style>
+        /* 상품 상세(view) */
+        #product-view {
+            padding: 16px;
+            box-sizing: border-box;
+        }
+        #product-view > section {
+            width: 100%;
+            height: auto;
+        }
+        #product-view > section > article {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+
+        #product-view > section > .info {}
+        #product-view > section > .detail {}
+        #product-view > section > .notice {}
+        #product-view > section > .review {}        
+
+    </style>
+
 </head>
 <body>    
     <div id="wrapper">
@@ -48,7 +72,31 @@
 
         <main>
             <aside></aside>
-            <section id="product-view"></section>
+            <section id="product-view">
+
+                <!-- 상품 상세 네비게이션 -->
+                <nav>
+                    <h1>FreeMovement BLUEFORCE</h1>
+                    <p>
+                        HOME > <span>패션·의류·뷰티</span> > <strong>남성의류</strong>
+                    </p>
+                </nav>
+
+                <section>
+                    <!-- 상품 기본정보 -->
+                    <article class="info"></article>
+
+                    <!-- 상품 상세정보 -->
+                    <article class="detail"></article>
+
+                    <!-- 상품 정보 제공 고시 -->
+                    <article class="notice"></article>
+
+                    <!-- 상품 리뷰 -->
+                    <article class="review"></article>
+                </section>
+
+            </section>
         </main>
 
         <footer>
