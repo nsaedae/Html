@@ -2,139 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>케이마켓::관리자메인</title>
-    
-    
+    <title>케이마켓 관리자::메인</title>
+
+    <!-- admin 공통 스타일 -->
+    <link rel="stylesheet" href="./css/style.css"/>
     <style>
-        /* 초기화 */
-        * {
-            margin: 0;
-            padding: 0;
-            font: normal 12px '고딕';
-        }
+        /* index 스타일 */
+        #index {}
 
-        ul, ol {list-style: none;}
-        a {text-decoration: none; color: #111;}
-        input, textarea {outline: none;}
-
-        #admin-wrapper {
-            width: 100%;
-            height: auto;
-        }
-
-        /* 헤더 */
-        header {
-            width: 100%;
-            height: 120px;
-            background: url('./img/admin_bg_header.jpg');
-        }
-
-        header > a.logo {}
-        header > p {}
-        header > p > span {}
-        header > p > a {}
-
-        /* 푸터 */
-        footer {
-            width: 100%;
-            height: 60px;
-            background: #0d3a46;
-        }
-
-        footer > .copyright {
-            color: #fff;
-        }
-
-        /* 메인 */
-        main {            
-            width: 1400px;
-            min-height: 600px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        main > aside {
-            float: left;
-            width: 270px;
-            height: 100%;
-            border-left: 1px solid #c0c0c0;
-            box-sizing: border-box;
-            background-image: url('./img/admin_bg_aside.jpg');
-        }
-        
-
-        main > section {
-            float: right;
-            width: 1130px;
-            min-height: 600px;
-        }
-
-        /* gnb(global navigation bar) */
-        #gnb {
-            width: 100%;
-            height: auto;            
-        }
-        #gnb > li {
-            width: 100%;
-            min-height: 66px;
-            border-top: 1px solid #c0c0c0;
-            box-sizing: border-box;
-        }
-        #gnb > li:last-child {border-bottom: 1px solid #c0c0c0;}
-        #gnb > li > a {
-            display: block;
-            width: 100%;
-            height: 66px;            
-            font-size: 14px;
-            font-weight: bold;
-            color: #222;
-            line-height: 66px;
-            text-indent: 12px;
-        }
-        #gnb > li > a > i {
-            font-size: 20px;
-            margin-right: 12px;
-        }
-
-        #gnb ol {
-            display: none;
-            width: 100%;
-            height: auto;
-        }
-        #gnb ol > li {
-            width: 100%;
-            height: 32px;
-        }
-        #gnb ol > li > a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            text-indent: 56px;           
-        }
-
-        #gnb ol > li > a:hover {font-weight: bold;}
     </style>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
-    <script>
+    <script src="./js/gnb.js"></script>
 
-        $(function(){
 
-            let menu = $('#gnb > li > a');
-
-            menu.click(function(e){
-                e.preventDefault();
-
-                let isVisible = $(this).next().is(':visible');
-                if(isVisible){
-                    // 2차 메뉴를 닫음
-                    $(this).next().slideUp(200);
-                }else{
-                    // 2차 메뉴를 펼침
-                    $(this).next().slideDown(200);
-                }
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="admin-wrapper">
@@ -198,9 +80,8 @@
                         </ol>
                     </li>
                 </ul>
-
             </aside>
-            <section></section>
+            <section id="index"></section>
         </main>
         <footer>
             <p class="copyright">
